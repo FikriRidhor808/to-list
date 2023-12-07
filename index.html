@@ -1,0 +1,48 @@
+<!-- Deklarasi tipe dokumen HTML -->
+<!DOCTYPE html>
+<!-- Mulai tag HTML, dengan bahasa Inggris sebagai bahasa utama -->
+<html lang="en">
+<head>
+    <!-- Set karakter encoding dokumen menjadi UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Menentukan versi dan kompatibilitas Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Menentukan tampilan responsif untuk perangkat berukuran berbeda -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul halaman web -->
+    <title>TodoList - App</title>
+    <!-- Menghubungkan file stylesheet eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container utama untuk konten halaman -->
+    <div class="container">
+        <!-- Kontainer aplikasi ToDo -->
+        <div class="todo-app">
+            <!-- Judul aplikasi ToDo dengan gambar -->
+            <h2>
+                <img src="https://drive.google.com/uc?id=1tAP7XI_Okwn8sLQdDfo7TCB4GLUYivX1"
+                alt="img todo"
+                width="30px"
+                height="30px"/> TodoList
+            </h2>
+            <!-- Container untuk input dan tombol -->
+            <div style="display: flex;">    
+                <!-- Baris input untuk menambahkan tugas -->
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="----- Tulis Disini -----"/>
+                </div>
+                <!-- Tombol untuk menambahkan tugas dengan memanggil fungsi addTask() -->
+                <button onclick="addTask()"> Add </button>
+<!--                 <button onclick="clearData()"> ClearAll </button> -->
+            </div>
+            <!-- Daftar tugas akan ditampilkan di sini -->
+            <ul id="list-container"></ul>
+        </div>
+    </div>
+    <!-- Menghubungkan file script JavaScript eksternal -->
+    <script src="script.js"></script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
